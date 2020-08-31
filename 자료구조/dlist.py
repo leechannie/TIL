@@ -16,3 +16,6 @@ class dlist:
             
         def is_emtpy(self):
             return self.size == 0
+        
+        def insert_before(self,node, item):
+            
