@@ -18,4 +18,10 @@ class dlist:
             return self.size == 0
         
         def insert_before(self,node, item):
+            tmp = node.prev
+            n = self.Node(self,tmp,node)
+            node.prev = n
+            tmp.prev = n
+            self.size += 1
+
             
