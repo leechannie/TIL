@@ -24,4 +24,5 @@ class dlist:
             tmp.prev = n
             self.size += 1
 
+        def insert_afer(self, node, itme):
             
