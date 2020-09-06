@@ -1,3 +1,5 @@
+#백준 알고리즘 4673번
+
 def d():
     change = []
     for i in range(1,10001):
