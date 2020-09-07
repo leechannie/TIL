@@ -25,4 +25,8 @@ class dlist:
             self.size += 1
 
         def insert_afer(self, node, itme):
-            
+            tmp = node.prev
+            n = self.Node(item, tmp, node)
+            node.prev = n
+            node.next = n
+            self.size += 1 
