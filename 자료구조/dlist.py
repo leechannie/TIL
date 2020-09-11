@@ -30,3 +30,5 @@ class dlist:
             node.prev = n
             node.next = n
             self.size += 1 
+        
+        def remove_before(self, node, item):
