@@ -1,3 +1,5 @@
+#백준 알고리즘 2577번
+
 def low(item):
     if item < 100 or item > 1000:
         print("다시 입력")
