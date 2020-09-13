@@ -17,7 +17,4 @@ st = list(str(total))
 
 for i in range(10):
     print(st.count(str(i)))
-
-
-
     
