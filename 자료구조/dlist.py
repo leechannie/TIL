@@ -34,3 +34,4 @@ class dlist:
         def remove(self, node):
             node.prev.next = node.next
             node.next.prev = node.prev
+            self.size -= 1
