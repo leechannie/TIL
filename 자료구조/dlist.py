@@ -35,3 +35,6 @@ class dlist:
             node.prev.next = node.next
             node.next.prev = node.prev
             self.size -= 1
+
+        def print_all(self, node):
+            
