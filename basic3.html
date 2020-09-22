@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>폼 태그 전체 연습</title>
+</head>
+
+<body>
+    <h3>폼 태그 전체 연습</h3>
+    <hr>
+    <form name="fo" action="#" method="=get">
+    <fieldset>
+        <legend>개인 정보</legend>
+        사용자 ID: <input type="text"><br>
+        비밀번호: <input type="password"><br>
+        email : <input type="email" placeholder = id@host><br>
+        홈페이지: <input type=" url " placeholder ="http://"><br>
+        전화번호: <input type=" tel " placeholder ="010-1234-5678"><br>
+        국적(input-datalist): <input type="text" list="countries">
+            <datalist id="countries">
+                <option value= "가나">
+                <option value= "스위스">
+                <option value= "브라질">
+            </datalist>
+            <p>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>메뉴 선택</legend>
+        메뉴 검색 : <input type="text" name = "menuSearch" placeholder = "메뉴 이름"><p>
+        <label for="menuS">메뉴(select) : </label>
+        <select id="menuS" name="chinaS">
+            <option value="1">짜장면</option>
+            <option value="2" selected>짬뽕</option>
+            <option value="3">탕수육</option>
+        </select>
+        <p>
+
+        <input id = "menuC1" type="checkbox" name="chinaC" value="1">
+        <label for="menuC1">짜장면 <img src ="img/food1.jpg" width="100"></label>
+        <input id = "menuC2" type="checkbox" name="chinaC" value="2">
+        <label for="menuC2">짬뽕 <img src ="img/food2.jpg" width="100"></label>
+        <input id = "menuC3" type="checkbox" name="chinaC" value="3">
+        <label for="menuC3">탕수육 <img src ="img/food3.jpg" width="100"></label>
+        <p>
+
+        <label>
+            <input type="radio" name="chinaR" value="1">
+            짜장면 <img src ="img/food1.jpg" width="100">
+        </label>
+        <label>
+            <input type="radio" name="chinaR" value="2">
+            짬뽕 <img src ="img/food2.jpg" width="100">
+        </label>
+        <label>
+            <input type="radio" name="chinaR" value="3">
+            탕수육 <img src ="img/food3.jpg" width="100">
+        </label>
+        <p><br>
+
+        배달일 : <input type="date" value=""><br><br>
+        배달시간 : <input type="time" value=""><br><br>
+        기타 요구사항 : <textarea cols="60" rows="4">기타 요구사항을 쓰세요.</textarea>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>환경 설정</legend>
+        글자색 선택 <input type="color" value="#00BFFF"
+                        onchange="document.body.style.color=this.value">
+        
+        <p>
+        배경색 선택 <input type="color" value="#00BFFF"
+        onchange="document.body.style.background=this.value">
+        <p>
+
+        웹프로그래밍 학습 시간 (0.0~10.0시간) : <input type="number" name="duration" min="0.0" max="10.0" step="0.5"><br><br>
+        적정 학습 온도 : 10&deg;
+        <input type="range" name="temp" min="10" max="30"> 30&deg;
+    </fieldset>
+    <br>
+    <p>
+        <input type="reset" value="취소">
+        <input type="submit" value="완료">
+    </form>
+</body>
+</html>
