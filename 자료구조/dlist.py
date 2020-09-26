@@ -38,3 +38,4 @@ class dlist:
 
         def print_all(self, node):
             
+            
