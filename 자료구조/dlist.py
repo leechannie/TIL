@@ -37,5 +37,4 @@ class dlist:
             self.size -= 1
 
         def print_all(self, node):
-            
-            
+           
