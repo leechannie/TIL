@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>테이블 확장 공부2</title>
+        <style>
+            table{border:5px dotted orange;
+                    border-collapse: collapse;}
+            td, th{border: 3px dashed plum ;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th></th>
+                <th>1</th>
+                <th colspan="2">2</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">세운</td>
+                    <td>ㅎ</td>
+                    <td>ㄱ</td>
+                    <td>ㄴ</td>
+                </tr>
+                <tr>
+                    <td>ㄷ</td>
+                    <td>ㄹ</td>
+                    <td>ㅁ</td>
+                </tr>
+                <tr>
+                    <td>히</td>
+                    <td>ㅂ</td>
+                    <td>ㅇ</td>
+                    <td rowspan="2">ㅊ</td>
+                </tr>
+                <tr>
+                    <td>오</td>
+                    <td>ㅅ</td>
+                    <td>ㅈ</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

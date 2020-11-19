@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .loading {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }}
+
+    .apiRequest {
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    var count = 0;
+    function stop (){
+      if (count % 2 == 0){
+          alert("그만")
+          count ++;
+        classList.remove("loading");
+        
+            }
+        else {
+          alert("시작")
+          count ++;
+        classList.add("loading");
+            }
+        }
+  </script>
+</head>
+<body>
+  <div class="spinner"></div>
+  <button class="apiRequest" onclick="stop()">데이터 가져오기</button>
+</body>
+<div class="loading"></div>
+<script src="loading.js">
+
+   classList.add('loading');
+  
+
+</script>
+</html>

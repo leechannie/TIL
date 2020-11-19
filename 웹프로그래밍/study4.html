@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>스터디 구구단 짜기</title>
+    </head>
+
+    <body>
+        <h3>구구단 프로그램</h3>
+        <hr>
+        <script>
+            function gugudan(n){
+                var m = parseInt(n);
+                for (var i=1; i<=9; i++){
+                    document.write(m + "X" + i + " = "+ m*i + "<br>");
+                }
+            }
+        
+        var n = prompt("구구단 몇 단을 원하시나요?");
+        gugudan(n)
+    </script>
+    </body>
+</html>
