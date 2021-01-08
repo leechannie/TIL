@@ -4,7 +4,8 @@
 # Studying
 > 백준 알고리즘 <br>
 > 자료구조 <br>
-> HTML
+> HTML <br>
+> 데이터 기초 분석(Pandas)
 
 # Project
 > 1일 1커밋 (20.08.24~20.09.30)
