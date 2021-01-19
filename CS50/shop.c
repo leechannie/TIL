@@ -12,3 +12,4 @@ int main (void){
         printf("매출액(부가세포함): %.0f 원\n", (answer*10000)+(answer*10000*0.1));
     }
 }
+
