@@ -5,7 +5,6 @@
 
 int CalculateGrade(void);
 
-
 int main(void) {
     CalculateGrade();
 }
