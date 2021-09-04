@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8/">
+    <title>자기소개 Page</title></head>
+    <style>
+        #nav-c{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: rgb(129, 154, 238);
+        }
+        #nav-i{
+            padding: 15px;
+            cursor: pointer;
+        }
+        h1{
+            color: rgb(129, 154, 238);
+            text-align: center;
+        }
+        h5{
+            color: rgb(179, 179, 179);
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        footer{
+            background-color: rgb(184, 184, 184);
+            bottom: 0;  
+            position: absolute; 
+            width: 100%;   
+            margin-top: 50px;  
+        }
+    </style>
+    
+<body>
+   <nav id="nav-c"> 
+       <a id="nav-i" style="color:  white; text-decoration: none; font-weight: bold;" href="/home"> Home </a> 
+       <a id="nav-i" style="color: white; text-decoration: none; font-weight: bold;" href="/sns"> SNS </a> 
+       <a id="nav-i" style="color: white; text-decoration: none; font-weight: bold;" href="/guest"> 방명록 </a> 
+       <a id="nav-i" style="color: white; text-decoration: none; font-weight: bold;" href="/gallery"> 갤러리 </a> 
+       <a id="nav-i" style="color: white; text-decoration: none; font-weight: bold;" href="/QA"> Q&A </a> 
+   </nav> 
+        <h1>질문에 답변 드립니다👩🏻‍🤝‍👩</h1>
+        <h5>예시 질문의 숫자 혹은 질문을 그대로(?포함) 적어주세요.</h5>
+        <details>
+            <summary>예시 질문</summary>
+            <ol>
+                <li>혈액형은?</li>
+                <li>좋아하는 영화는?</li>
+                <li>좋아하는 음식은?</li>
+                <li>좋아하는 연예인은?</li>
+                <li>MBTI는?</li>
+                <li>사는 곳은?</li>
+                <li>가고싶은 직무는?</li>
+            </ol>
+        </details>
+        <div>
+            <form id="form">
+                <input type="text" id="question">
+                <button type="submit">질문🎈</button>
+            </form>
+       </div> 
+       <p>답변: <span id="answer"></span></p>
+       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./qaUser.js"></script>
+       <footer>
+        <address>
+            연락처 : <a href="mailto:webmaster@somedomain.com">lch02130@naver.com</a> <br> 
+        </address> 
+            고급웹프로그래밍, 2021 high-level web programming midterm <br>
+            <small>Copyright &copy; 2021 leechanhee</small>
+    </footer>
+   
+</body>
+</html>
