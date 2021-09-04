@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="342dp"
+        android:layout_height="43dp"
+        android:text="선택을 시작하시겠습니까?"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <Switch
+        android:id="@+id/CheckStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="시작!"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="342dp"
+        android:layout_height="43dp"
+        android:text="좋아하는 아이스크림 맛은?"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/Rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/RadioV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바닐라"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/RadioCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초코"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/RadioCo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="커피"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/RadioS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="딸기"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ImgPet"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:text="선택완료"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/vainilla" />
+
+    <Button
+        android:id="@+id/BtnEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="종료"
+        android:textSize="12sp"
+        app:backgroundTint="#9F9A9A"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/BtnFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="처음으로"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:backgroundTint="#9F9A9A" />
+
+
+</LinearLayout>
