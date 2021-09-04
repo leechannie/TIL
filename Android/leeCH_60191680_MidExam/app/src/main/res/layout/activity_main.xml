@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PREVIOUS" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCFFCC"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nougat"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:padding="20dp"/>
+            <TextView
+                android:id="@+id/ore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oreo"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:padding="20dp"/>
+            <TextView
+                android:id="@+id/pie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pie"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:padding="20dp"/>
+
+            <TextView
+                android:id="@+id/Q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Q"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:padding="20dp"/>
+
+            <TextView
+                android:id="@+id/r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android R"
+                android:background="@color/white"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:padding="20dp"/>
+        </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/baseLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFAA"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bird" />
+        </LinearLayout>
+
+    </ViewFlipper>
+</LinearLayout>
