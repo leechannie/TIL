@@ -1,0 +1,29 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    (async () => {
+        try {
+            const result = await axios.post('https://jsonplaceholder.typicode.com/todos',{
+                title: 'Study', completed: false
+            });
+            console.log(result.data);
+        } catch(error) {
+            console.error(error);
+        }
+    })
+    ();  //async 호출 필요
+</script>
+
+<!-- <script>
+    axios({
+        method: 'get',
+        url: 'https://jsonplaceholder.typicode.com/todos?userId=5',
+    })
+    .then ((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
+</script> -->
+
+

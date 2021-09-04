@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>{{title}}</h2>
+
+<!-- 한 개의 파일 업로드 -->
+<div>
+    <form id="form" action='/upload' method='post' enctype='multipart/form-data'>
+        <label>Image File</label><input type="file" name="image"><br>
+        <label>Image Title</label><input type="text" name="title">
+        <p>
+            <button type="submit">제출</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="UTF-8">
+        <title>소켓 테스트 ver.1</title>
+    </head>
+
+    <body>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            //소켓 생성
+            const socket = io.connect();
+
+            //소켓 이벤트 연결
+            socket.on('connect', () => {
+                alert('소켓 서버와 연결')
+            });
+
+            socket.on('news', (msg) => {
+                document.writeln('<div>'+msg+'</div>');
+                socket.emit('reply', 'Hello, Socket.IO Server')
+            });
+        </script>
+    </body>
+</html>

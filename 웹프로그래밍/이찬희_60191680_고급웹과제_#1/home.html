@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8/">
+    <title>이찬희/60191680/고급웹프로그래밍 과제 #1</title>
+    <style>
+        body{
+            background: url(img/pizza.jpg);
+            }
+        #box{
+            background-color:  rgb(231, 227, 167);
+            width: 530px;
+        }
+        #pr{
+            color: white;
+            background-color:  rgb(252, 106, 62);
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+       <a href="/"> Home </a>
+       <a href="/pizza"> 피자 사진</a>
+   </nav> 
+   <p> 
+       <h1>찬희네 피자가게 가격 정보 페이지</h1>
+       <h3>우리 가게의 피자 가격을 알려드립니다.</h3>
+       <p id="box"> 
+                <strong>피자종류: </strong><br>
+                  페퍼로니 피자: 도우 = 기본, 칼로리: 266kcal(100g 기준)<br>
+                  고구마 피자: 도우 = 고구마 무스 크러스트, 칼로리: 302kcal(100g 기준)<br>
+                  감자 피자: 도우 = 치즈 크러스트, 칼로리: 305kcal(100g 기준)<br>
+                  치즈 피자: 도우 = 치즈 무스 크러스트, 칼로리: 322kcal(100g 기준)<br>
+                  불고기 피자: 도우 = 기본, 칼로리: 350kcal(100g 기준)<br>
+                  고르곤졸라: 도우 = 씬, 칼로리: 200cal(100g 기준)</p>
+       <p style="text-decoration-line: underline;"> 피자 이름을 입력해주세요! </p>
+       <div>
+           <form id="form"> 
+               <input type="text" id="webtech">
+               <button type="submit">검색</button>
+           </form>
+       </div>
+       <p id = "pr"><strong>피자 가격: </strong><span id="answer"></p>
+       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+       <script src="./front.js"></script>
+</body>
+</html>

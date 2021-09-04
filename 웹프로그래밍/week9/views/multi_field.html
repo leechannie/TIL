@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>{{title}}</h2>
+
+<!-- 여러 개의 input 태그와 서로 다른 name 속성 사용 -->
+<div>
+    <form id="form" action='/upload' method='post' enctype='multipart/form-data'>
+        <label>Image File 1</label><input type="file" name="image1"><br>
+        <label>Image File 2</label><input type="file" name="image2"><br>
+        <label>Image File 3</label><input type="file" name="image3"><br>
+        <label>Image Title</label><input type="text" name="title">
+        <p>
+            <button type="submit">제출</button>
+    </form>
+</div>
+{% endblock %}
