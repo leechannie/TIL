@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>60191680 이찬희 #2</title>
+    <style>
+      table { border: 1px solid black; border-collapse: collapse; }
+      table th { border: 1px solid black;
+                          background-color: lemonchiffon; }
+      table td { border: 1px solid black;
+                          background-color: rgb(255, 255, 255); }
+      body{background-color: rgb(205, 243, 167);}
+      h1{margin-top: 20px;}
+      #box{
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+    <h1>배달의 요기요</h1>
+  </div>
+    <div>
+      <form id="user-form">
+        <fieldset>
+          <legend>음식 주문</legend>
+          <div><input id="username" type="text" placeholder="주문자"></div>
+          <div><input id="food" type="text" placeholder="주문음식"></div>
+          <div><input id="call" type="tel" placeholder="전화번호"></div>
+          <div><input id="trash" type="checkbox"><label for="trash">일회용품 여부</label></div>
+          <div><input id="take" type="checkbox"><label for="take">포장여부</label></div>
+          <button type="submit">등록</button>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <table id="user-list">
+      <thead>
+      <tr>
+        <th>주문번호</th>
+        <th>주문자</th>
+        <th>주문음식</th>
+        <th>전화번호</th>
+        <th>일회용품 여부</th>
+        <th>포장 여부</th>
+      </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.food}}</td>
+          <td>{{user.call}}</td>
+          <td>{{ '일회용품 받음' if user.trash else '일회용품 안 받음'}}</td>
+          <td>{{ '포장함' if user.take else '포장 안 함'}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <br>
+    <div>
+      <form id="comment-form">
+        <fieldset>
+          <legend>음식 리뷰</legend>
+          <div><input id="userid" type="text" placeholder="주문번호"></div>
+          <div><input id="comment" type="text" placeholder="리뷰"></div>
+          <button type="submit">등록</button>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <table id="comment-list">
+      <thead>
+      <tr>
+        <th>주문번호</th>
+        <th>작성자</th>
+        <th>리뷰</th>
+        <th>수정</th>
+        <th>삭제</th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/sequelize.js"></script>
+  </body>
+</html>
+
